@@ -1,0 +1,41 @@
+@import ../../../app/pages/styles/helpers
+
+.icon
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 80px
+    height: 80px
+    margin: 72px auto 32px
+    border-radius: 50%
+    background: $purple
+    svg
+        fill: $neutrals8
+
+.input
+    width: 100%
+    height: 40px
+    margin-top: 5px
+    padding: 0 42px 0 16px
+    background: none
+    border: 2px solid $neutrals6
+    border-radius: 8px
+    +poppins
+    +caption-2
+    transition: border-color .2s
+    +placeholder
+        color: $neutrals4
+    +dark
+        border-color: $neutrals3
+        color: $neutrals8
+    &:focus
+        border-color: $neutrals4
+
+.info
+    margin-bottom: 32px
+    text-align: center
+    +body-bold-2
+
+.button
+    &:not(:last-child)
+        margin-bottom: 8px

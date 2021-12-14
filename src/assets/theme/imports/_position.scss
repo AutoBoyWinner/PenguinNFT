@@ -1,0 +1,32 @@
+@for $i from 0 through 100 {
+  .top-#{$i * 5} {
+    top: #{$i * 5}px;
+  }
+  .top-n#{$i * 5} {
+    top: #{$i * -5}px;
+  }
+  .bottom-#{$i * 5} {
+    bottom: #{$i * 5}px;
+  }
+  .bottom-n#{$i * 5} {
+    bottom: #{$i * -5}px;
+  }
+  .left-#{$i * 5} {
+    left: #{$i * 5}px;
+  }
+  .left-n#{$i * 5} {
+    left: #{$i * -5}px;
+  }
+  .right-#{$i * 5} {
+    right: #{$i * 5}px;
+  }
+  .right-n#{$i * 5} {
+    right: #{$i * -5}px;
+  }
+  .z-index-#{$i * 5} {
+    z-index: #{$i * 5};
+  }
+  .z-index-n#{$i * 5} {
+    z-index: #{-$i * 5};
+  }
+}

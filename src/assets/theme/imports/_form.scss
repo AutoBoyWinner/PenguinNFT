@@ -1,0 +1,27 @@
+form {
+
+  label.form-label {
+    width: 100%;
+    margin-bottom: 0;
+    transition: ease box-shadow .3s;
+  }
+
+  .invalid {
+    label.form-label {
+      @include stroke_invalid;
+    }
+  }
+
+  .form-control[readonly] {
+    background-color: white;
+  }
+
+  .form-group {
+    textarea.form-control, select.form-control, input.form-control {
+      padding: 0;
+      color: $mine-shaft;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+}

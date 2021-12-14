@@ -1,0 +1,25 @@
+div, p, a, span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0 !important;
+}
+
+@for $i from 5 through 90 {
+  .font-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+.text-overflow {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

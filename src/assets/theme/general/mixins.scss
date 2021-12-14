@@ -1,0 +1,5 @@
+@mixin stroke_invalid() {
+  box-shadow: 0 0 5px 2px #f44336;
+  border-radius: 5px;
+  padding: 0 15px;
+}
